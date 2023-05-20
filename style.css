@@ -1,0 +1,92 @@
+body{
+    font-family: 'Heebo', sans-serif;
+    height: 100%;
+}
+
+.bg-img{
+    background-image: url(img-bg@2x.png);
+    min-height: 450px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.full-control{
+    position: absolute;
+    top:50px;
+    right: 50px;
+    left: 50px;
+    background-color: #EEEEEED1;
+    opacity: 1;
+    padding:10px;
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+h1{
+    color: #071192;
+    font-weight: bolder;
+    font-size:38px;
+}
+
+p{
+    font-size: 10px;
+}
+
+
+
+input{
+    border: 0;
+    border-bottom: 2px solid #071192;
+    outline: 0;
+    background-color: #FFFFFF;
+    margin:5px;
+    margin-top: 1px;
+}
+
+label{
+    margin:6px;
+    color:black;
+    font-size: 12px;
+    margin-bottom: 1px;
+    font-size: 8px;
+    font-weight: bold;
+}
+
+#btn-control{
+    background-color: #071192;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    padding-top: 4px;
+    margin: 5px;
+    min-width: 70px;
+}
+
+@media screen and (min-width: 390px){
+    .full-control{
+        top:20%;
+        right:15%;
+        max-width: 300px;
+        padding:25px;
+    }
+    .bg-img{
+        min-height: 900px;
+    }
+    p{
+        font-size: 14;
+    }
+    h1{
+        font-size: 40px;
+    }
+    input{
+        width:90%;
+    }
+    #btn-control{
+        width:50%;
+    }
+
+}
